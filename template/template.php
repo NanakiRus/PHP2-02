@@ -20,7 +20,7 @@
     </article>
 <h2>Добавить новую новость</h2>
     <form method="post" action="/obychenie/Php2-02/saveArticle.php">
-        <input type="hidden" name="id" value="<?php echo null; ?>">
+        <input type="hidden" name="id" value="">
         <p><input type="text" class="form-control" name="title" value=""></p>
         <p><textarea name="text" class="form-control" rows="3"></textarea></p>
         <input class="btn btn-default btn-lg" type="submit">

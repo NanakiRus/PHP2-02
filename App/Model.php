@@ -71,7 +71,7 @@ abstract class Model
 
     public function save()
     {
-        if (null == $this->id) {
+        if (null === $this->id) {
             return $this->insert();
         } else {
             return $this->update();
