@@ -14,11 +14,13 @@
     <article>
         <?php foreach ($news as $value): ?>
             <ul>
-                <li><a href="/obychenie/Php2-02/article.php?id=<?php echo $value->id; ?>"><?php echo $value->title; ?></a><br /><?php echo $value->text; ?></li>
+                <li>
+                    <a href="/obychenie/Php2-02/article.php?id=<?php echo $value->id; ?>"><?php echo $value->title; ?></a><br/><?php echo $value->text; ?>
+                </li>
             </ul>
         <?php endforeach; ?>
     </article>
-<h2>Добавить новую новость</h2>
+    <h2>Добавить новую новость</h2>
     <form method="post" action="/obychenie/Php2-02/saveArticle.php">
         <input type="hidden" name="id" value="">
         <p><input type="text" class="form-control" name="title" value=""></p>
