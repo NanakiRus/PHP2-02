@@ -8,12 +8,17 @@ class Config
     private $data;
     private static $instance = null;
 
-    private function __construct()
+    protected function __construct()
     {
         $this->data = include __DIR__ . '/../config.php';
     }
 
     protected function __clone()
+    {
+
+    }
+
+    protected function __wakeup()
     {
 
     }
