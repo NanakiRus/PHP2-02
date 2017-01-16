@@ -5,7 +5,7 @@ namespace App;
 
 class Config
 {
-    private $data;
+    public $data;
     private static $instance = null;
 
     protected function __construct()
