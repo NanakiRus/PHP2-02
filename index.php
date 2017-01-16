@@ -2,13 +2,6 @@
 
 require __DIR__ . '/autoload.php';
 
-$author = new \App\Models\Author();
+$news = new \App\Models\Article();
 
-$author->id = 6;
-$author->firstname = 'ПАВПff';
-$author->lastname = 'вап';
-$author->save();
-
-$config = new \App\Config();
-echo $config->data['db']['host'];
-
+include __DIR__ . '/templete/template.php';
