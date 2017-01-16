@@ -12,7 +12,7 @@
 <body>
 <div class="container">
     <article>
-        <?php foreach ($news::findAll() as $value): ?>
+        <?php foreach ($news as $value): ?>
             <ul>
                 <li><a href="/obychenie/Php2-02/article.php?id=<?php echo $value->id; ?>"><?php echo $value->title; ?></a><br /><?php echo $value->text; ?></li>
             </ul>

@@ -2,6 +2,6 @@
 
 require __DIR__ . '/autoload.php';
 
-$news = new \App\Models\Article();
+$news = \App\Models\Article::findAll();
 
 include __DIR__ . '/templete/template.php';
