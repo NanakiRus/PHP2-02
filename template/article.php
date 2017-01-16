@@ -12,11 +12,12 @@
 <body>
 <div class="container">
     <article>
-            <form method="post" action="/obychenie/Php2-02/save.php">
+            <form method="post" action="/obychenie/Php2-02/saveArticle.php">
                 <input type="hidden" name="id" value="<?php echo $news->id; ?>">
                 <p><input type="text" class="form-control" name="title" value="<?php echo $news->title; ?>"></p>
                 <p><textarea name="text" class="form-control" rows="3"><?php echo $news->text; ?></textarea></p>
                 <input value="Сохранить" class="btn btn-default btn-lg" type="submit">
+                <a class="btn btn-default btn-lg" href="/obychenie/Php2-02/deleteArticle.php?id=<?php echo $news->id; ?>">Удалить</a>
             </form>
     </article>
 </div>

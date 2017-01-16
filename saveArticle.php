@@ -2,8 +2,8 @@
 
 require __DIR__ . '/autoload.php';
 
-$news = new \App\Models\Article();
-if (!empty($_POST)) {
+if (isset($_POST['id'])) {
+    $news = new \App\Models\Article();
     $news->id = $_POST['id'];
     $news->title = $_POST['title'];
     $news->text = $_POST['text'];
